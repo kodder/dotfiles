@@ -1,0 +1,532 @@
+2016-09-01 13:54:34		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-01 13:55:05		irc: server znc added
+2016-09-01 13:55:58	=!=	Error: option "znc.nicks" not found
+2016-09-01 13:56:05		[irc]  /server  list|listfull [<server>]
+2016-09-01 13:56:05		                add <server> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2016-09-01 13:56:05		                copy|rename <server> <new_name>
+2016-09-01 13:56:05		                reorder <server> [<server>...]
+2016-09-01 13:56:05		                del|keep <server>
+2016-09-01 13:56:05		                deloutq|jump|raw
+2016-09-01 13:56:05		list, add or remove IRC servers
+2016-09-01 13:56:05		    list: list servers (without argument, this list is displayed)
+2016-09-01 13:56:05		listfull: list servers with detailed info for each server
+2016-09-01 13:56:05		     add: add a new server
+2016-09-01 13:56:05		  server: server name, for internal and display use
+2016-09-01 13:56:05		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2016-09-01 13:56:05		    temp: add a temporary server (not saved)
+2016-09-01 13:56:05		  option: set option for server (for boolean option, value can be omitted)
+2016-09-01 13:56:05		nooption: set boolean option to 'off' (for example: -nossl)
+2016-09-01 13:56:05		    copy: duplicate a server
+2016-09-01 13:56:05		  rename: rename a server
+2016-09-01 13:56:05		 reorder: reorder list of servers
+2016-09-01 13:56:05		    keep: keep server in config file (for temporary servers only)
+2016-09-01 13:56:05		     del: delete a server
+2016-09-01 13:56:05		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2016-09-01 13:56:05		    jump: jump to server buffer
+2016-09-01 13:56:05		     raw: open buffer with raw IRC data
+2016-09-01 13:56:05		Examples:
+2016-09-01 13:56:05		  /server listfull
+2016-09-01 13:56:05		  /server add freenode chat.freenode.net
+2016-09-01 13:56:05		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2016-09-01 13:56:05		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2016-09-01 13:56:05		  /server copy freenode freenode-test
+2016-09-01 13:56:05		  /server rename freenode-test freenode2
+2016-09-01 13:56:05		  /server reorder freenode2 freenode
+2016-09-01 13:56:05		  /server del freenode
+2016-09-01 13:56:05		  /server deloutq
+2016-09-01 13:56:21		All servers:
+2016-09-01 13:56:21		Server: znc [not connected]
+2016-09-01 13:56:21		  addresses. . . . . . : 'elventails.com:6565'
+2016-09-01 13:56:21		  proxy. . . . . . . . :   ('')
+2016-09-01 13:56:21		  ipv6 . . . . . . . . :   (on)
+2016-09-01 13:56:21		  ssl. . . . . . . . . :   (off)
+2016-09-01 13:56:21		  ssl_cert . . . . . . :   ('')
+2016-09-01 13:56:21		  ssl_priorities . . . :   ('NORMAL:-VERS-SSL3.0')
+2016-09-01 13:56:21		  ssl_dhkey_size . . . :   (2048)
+2016-09-01 13:56:21		  ssl_fingerprint. . . :   ('')
+2016-09-01 13:56:21		  ssl_verify . . . . . :   (on)
+2016-09-01 13:56:21		  password . . . . . . :   (hidden)
+2016-09-01 13:56:21		  capabilities . . . . :   ('')
+2016-09-01 13:56:21		  sasl_mechanism . . . :   ('plain')
+2016-09-01 13:56:21		  sasl_username. . . . :   ('')
+2016-09-01 13:56:21		  sasl_password. . . . :   (hidden)
+2016-09-01 13:56:21		  sasl_key. .  . . . . :   ('')
+2016-09-01 13:56:21		  sasl_timeout . . . . :   (15 seconds)
+2016-09-01 13:56:21		  sasl_fail. . . . . . :   ('continue')
+2016-09-01 13:56:21		  autoconnect. . . . . :   (off)
+2016-09-01 13:56:21		  autoreconnect. . . . :   (on)
+2016-09-01 13:56:21		  autoreconnect_delay. :   (10 seconds)
+2016-09-01 13:56:21		  nicks. . . . . . . . :   ('kod,kod1,kod2,kod3,kod4')
+2016-09-01 13:56:21		  nicks_alternate. . . :   (on)
+2016-09-01 13:56:21		  username . . . . . . :   ('kod')
+2016-09-01 13:56:21		  realname . . . . . . :   ('')
+2016-09-01 13:56:21		  local_hostname . . . :   ('')
+2016-09-01 13:56:21		  command. . . . . . . :   ('')
+2016-09-01 13:56:21		  command_delay. . . . :   (0 seconds)
+2016-09-01 13:56:21		  autojoin . . . . . . :   ('')
+2016-09-01 13:56:21		  autorejoin . . . . . :   (off)
+2016-09-01 13:56:21		  autorejoin_delay . . :   (30 seconds)
+2016-09-01 13:56:21		  connection_timeout . :   (60 seconds)
+2016-09-01 13:56:21		  anti_flood_prio_high :   (2 seconds)
+2016-09-01 13:56:21		  anti_flood_prio_low. :   (2 seconds)
+2016-09-01 13:56:21		  away_check . . . . . :   (0 minutes)
+2016-09-01 13:56:21		  away_check_max_nicks :   (25)
+2016-09-01 13:56:21		  default_msg_kick . . :   ('')
+2016-09-01 13:56:21		  default_msg_part . . :   ('WeeChat %v')
+2016-09-01 13:56:21		  default_msg_quit . . :   ('WeeChat %v')
+2016-09-01 13:56:21		  notify . . . . . . . :   ('')
+2016-09-01 13:59:20	=!=	Option "znc" not found (tip: you can use wildcard "*" in option to see a sublist)
+2016-09-01 14:00:23		irc: server znc has been deleted
+2016-09-01 14:00:25		No server
+2016-09-01 14:13:29		irc: server znc added
+2016-09-01 14:13:38		Option changed: irc.server.znc.username = "kodder"  (default if null: "kod")
+2016-09-01 14:13:49		All servers:
+2016-09-01 14:13:49		Server: znc [not connected]
+2016-09-01 14:13:49		  addresses. . . . . . : 'elventails/6565'
+2016-09-01 14:13:49		  proxy. . . . . . . . :   ('')
+2016-09-01 14:13:49		  ipv6 . . . . . . . . :   (on)
+2016-09-01 14:13:49		  ssl. . . . . . . . . :   (off)
+2016-09-01 14:13:49		  ssl_cert . . . . . . :   ('')
+2016-09-01 14:13:49		  ssl_priorities . . . :   ('NORMAL:-VERS-SSL3.0')
+2016-09-01 14:13:49		  ssl_dhkey_size . . . :   (2048)
+2016-09-01 14:13:49		  ssl_fingerprint. . . :   ('')
+2016-09-01 14:13:49		  ssl_verify . . . . . :   (on)
+2016-09-01 14:13:49		  password . . . . . . :   (hidden)
+2016-09-01 14:13:49		  capabilities . . . . :   ('')
+2016-09-01 14:13:49		  sasl_mechanism . . . :   ('plain')
+2016-09-01 14:13:49		  sasl_username. . . . :   ('')
+2016-09-01 14:13:49		  sasl_password. . . . :   (hidden)
+2016-09-01 14:13:49		  sasl_key. .  . . . . :   ('')
+2016-09-01 14:13:49		  sasl_timeout . . . . :   (15 seconds)
+2016-09-01 14:13:49		  sasl_fail. . . . . . :   ('continue')
+2016-09-01 14:13:49		  autoconnect. . . . . : on
+2016-09-01 14:13:49		  autoreconnect. . . . :   (on)
+2016-09-01 14:13:49		  autoreconnect_delay. :   (10 seconds)
+2016-09-01 14:13:49		  nicks. . . . . . . . :   ('kod,kod1,kod2,kod3,kod4')
+2016-09-01 14:13:49		  nicks_alternate. . . :   (on)
+2016-09-01 14:13:49		  username . . . . . . : 'kodder'
+2016-09-01 14:13:49		  realname . . . . . . :   ('')
+2016-09-01 14:13:49		  local_hostname . . . :   ('')
+2016-09-01 14:13:49		  command. . . . . . . :   ('')
+2016-09-01 14:13:49		  command_delay. . . . :   (0 seconds)
+2016-09-01 14:13:49		  autojoin . . . . . . :   ('')
+2016-09-01 14:13:49		  autorejoin . . . . . :   (off)
+2016-09-01 14:13:49		  autorejoin_delay . . :   (30 seconds)
+2016-09-01 14:13:49		  connection_timeout . :   (60 seconds)
+2016-09-01 14:13:49		  anti_flood_prio_high :   (2 seconds)
+2016-09-01 14:13:49		  anti_flood_prio_low. :   (2 seconds)
+2016-09-01 14:13:49		  away_check . . . . . :   (0 minutes)
+2016-09-01 14:13:49		  away_check_max_nicks :   (25)
+2016-09-01 14:13:49		  default_msg_kick . . :   ('')
+2016-09-01 14:13:49		  default_msg_part . . :   ('WeeChat %v')
+2016-09-01 14:13:49		  default_msg_quit . . :   ('WeeChat %v')
+2016-09-01 14:13:49		  notify . . . . . . . :   ('')
+2016-09-01 14:14:39		Option changed: irc.server.znc.nicks = "Kod,Kod_,Kodder,Vual"  (default if null: "kod,kod1,kod2,kod3,kod4")
+2016-09-01 14:14:45		All servers:
+2016-09-01 14:14:45		Server: znc [not connected]
+2016-09-01 14:14:45		  addresses. . . . . . : 'elventails/6565'
+2016-09-01 14:14:45		  proxy. . . . . . . . :   ('')
+2016-09-01 14:14:45		  ipv6 . . . . . . . . :   (on)
+2016-09-01 14:14:45		  ssl. . . . . . . . . :   (off)
+2016-09-01 14:14:45		  ssl_cert . . . . . . :   ('')
+2016-09-01 14:14:45		  ssl_priorities . . . :   ('NORMAL:-VERS-SSL3.0')
+2016-09-01 14:14:45		  ssl_dhkey_size . . . :   (2048)
+2016-09-01 14:14:45		  ssl_fingerprint. . . :   ('')
+2016-09-01 14:14:45		  ssl_verify . . . . . :   (on)
+2016-09-01 14:14:45		  password . . . . . . :   (hidden)
+2016-09-01 14:14:45		  capabilities . . . . :   ('')
+2016-09-01 14:14:45		  sasl_mechanism . . . :   ('plain')
+2016-09-01 14:14:45		  sasl_username. . . . :   ('')
+2016-09-01 14:14:45		  sasl_password. . . . :   (hidden)
+2016-09-01 14:14:45		  sasl_key. .  . . . . :   ('')
+2016-09-01 14:14:45		  sasl_timeout . . . . :   (15 seconds)
+2016-09-01 14:14:45		  sasl_fail. . . . . . :   ('continue')
+2016-09-01 14:14:45		  autoconnect. . . . . : on
+2016-09-01 14:14:45		  autoreconnect. . . . :   (on)
+2016-09-01 14:14:45		  autoreconnect_delay. :   (10 seconds)
+2016-09-01 14:14:45		  nicks. . . . . . . . : 'Kod,Kod_,Kodder,Vual'
+2016-09-01 14:14:45		  nicks_alternate. . . :   (on)
+2016-09-01 14:14:45		  username . . . . . . : 'kodder'
+2016-09-01 14:14:45		  realname . . . . . . :   ('')
+2016-09-01 14:14:45		  local_hostname . . . :   ('')
+2016-09-01 14:14:45		  command. . . . . . . :   ('')
+2016-09-01 14:14:45		  command_delay. . . . :   (0 seconds)
+2016-09-01 14:14:45		  autojoin . . . . . . :   ('')
+2016-09-01 14:14:45		  autorejoin . . . . . :   (off)
+2016-09-01 14:14:45		  autorejoin_delay . . :   (30 seconds)
+2016-09-01 14:14:45		  connection_timeout . :   (60 seconds)
+2016-09-01 14:14:45		  anti_flood_prio_high :   (2 seconds)
+2016-09-01 14:14:45		  anti_flood_prio_low. :   (2 seconds)
+2016-09-01 14:14:45		  away_check . . . . . :   (0 minutes)
+2016-09-01 14:14:45		  away_check_max_nicks :   (25)
+2016-09-01 14:14:45		  default_msg_kick . . :   ('')
+2016-09-01 14:14:45		  default_msg_part . . :   ('WeeChat %v')
+2016-09-01 14:14:45		  default_msg_quit . . :   ('WeeChat %v')
+2016-09-01 14:14:45		  notify . . . . . . . :   ('')
+2016-09-01 14:15:17	=!=	Error with command "/server irc.server.znc.password kodder123" (help on command: /help server)
+2016-09-01 14:15:59	=!=	Error with command "/server irc.server.znc.password kodder/znc:kodder123" (help on command: /help server)
+2016-09-01 14:17:48		Option changed: irc.server.znc.username = "kodder/znc"  (default if null: "kod")
+2016-09-01 14:17:55	=!=	Error with command "/server irc.server.znc.password kodder123" (help on command: /help server)
+2016-09-01 14:18:06		Option changed: irc.server.znc.password = "kodder123"  (default if null: "")
+2016-09-01 14:18:12		Option changed: irc.server.znc.username = "kodder"  (default if null: "kod")
+2016-09-01 14:18:45		Option changed: irc.server.znc.realname = "Kod"  (default if null: "")
+2016-09-01 14:19:00		Option changed: irc.server.znc.command = "/msg nickserv identify hehehe"  (default if null: "")
+2016-09-01 14:19:27		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-01 14:19:45	=!=	Error: option "irc.server.znc.address" not found
+2016-09-01 14:19:56		All servers:
+2016-09-01 14:19:56		Server: znc [not connected]
+2016-09-01 14:19:56		  addresses. . . . . . : 'elventails/6565'
+2016-09-01 14:19:56		  proxy. . . . . . . . :   ('')
+2016-09-01 14:19:56		  ipv6 . . . . . . . . :   (on)
+2016-09-01 14:19:56		  ssl. . . . . . . . . :   (off)
+2016-09-01 14:19:56		  ssl_cert . . . . . . :   ('')
+2016-09-01 14:19:56		  ssl_priorities . . . :   ('NORMAL:-VERS-SSL3.0')
+2016-09-01 14:19:56		  ssl_dhkey_size . . . :   (2048)
+2016-09-01 14:19:56		  ssl_fingerprint. . . :   ('')
+2016-09-01 14:19:56		  ssl_verify . . . . . :   (on)
+2016-09-01 14:19:56		  password . . . . . . : (hidden)
+2016-09-01 14:19:56		  capabilities . . . . :   ('')
+2016-09-01 14:19:56		  sasl_mechanism . . . :   ('plain')
+2016-09-01 14:19:56		  sasl_username. . . . :   ('')
+2016-09-01 14:19:56		  sasl_password. . . . :   (hidden)
+2016-09-01 14:19:56		  sasl_key. .  . . . . :   ('')
+2016-09-01 14:19:56		  sasl_timeout . . . . :   (15 seconds)
+2016-09-01 14:19:56		  sasl_fail. . . . . . :   ('continue')
+2016-09-01 14:19:56		  autoconnect. . . . . : on
+2016-09-01 14:19:56		  autoreconnect. . . . :   (on)
+2016-09-01 14:19:56		  autoreconnect_delay. :   (10 seconds)
+2016-09-01 14:19:56		  nicks. . . . . . . . : 'Kod,Kod_,Kodder,Vual'
+2016-09-01 14:19:56		  nicks_alternate. . . :   (on)
+2016-09-01 14:19:56		  username . . . . . . : 'kodder'
+2016-09-01 14:19:56		  realname . . . . . . : 'Kod'
+2016-09-01 14:19:56		  local_hostname . . . :   ('')
+2016-09-01 14:19:56		  command. . . . . . . : '/msg nickserv identify ******'
+2016-09-01 14:19:56		  command_delay. . . . :   (0 seconds)
+2016-09-01 14:19:56		  autojoin . . . . . . :   ('')
+2016-09-01 14:19:56		  autorejoin . . . . . :   (off)
+2016-09-01 14:19:56		  autorejoin_delay . . :   (30 seconds)
+2016-09-01 14:19:56		  connection_timeout . :   (60 seconds)
+2016-09-01 14:19:56		  anti_flood_prio_high :   (2 seconds)
+2016-09-01 14:19:56		  anti_flood_prio_low. :   (2 seconds)
+2016-09-01 14:19:56		  away_check . . . . . :   (0 minutes)
+2016-09-01 14:19:56		  away_check_max_nicks :   (25)
+2016-09-01 14:19:56		  default_msg_kick . . :   ('')
+2016-09-01 14:19:56		  default_msg_part . . :   ('WeeChat %v')
+2016-09-01 14:19:56		  default_msg_quit . . :   ('WeeChat %v')
+2016-09-01 14:19:56		  notify . . . . . . . :   ('')
+2016-09-01 14:20:02		Option changed: irc.server.znc.addresses = "elvetails.com/6565"  (default if null: "")
+2016-09-01 14:20:09		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-01 14:20:27		Option changed: irc.server.znc.addresses = "elventails.com/6565"  (default if null: "")
+2016-09-01 14:20:32		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-01 15:36:15		Notify changed for "irc.znc.#python": "all" to "none"
+2016-09-01 15:36:28		Notify changed for "irc.znc.#da-box.net": "all" to "none"
+2016-09-01 15:36:50		Notify changed for "irc.znc.##devops": "all" to "none"
+2016-09-01 15:37:09		Notify changed for "irc.znc.#chef": "all" to "none"
+2016-09-01 15:37:16		Notify changed for "irc.znc.##security": "all" to "none"
+2016-09-01 15:38:57	=!=	Error: unable to set notify level "messages"
+2016-09-01 15:39:03		Notify changed for "irc.znc.#da-box.net": "none" to "message"
+2016-09-01 15:39:12		Notify changed for "irc.znc.#python": "none" to "message"
+2016-09-01 15:40:03	=!=	Error: unable to set notify level "help"
+2016-09-01 15:40:10		[core]  /buffer  list
+2016-09-01 15:40:10		                 clear [<number>|<name>|-merged|-all [<number>|<name>...]]
+2016-09-01 15:40:10		                 move <number>|-|+
+2016-09-01 15:40:10		                 swap <number1>|<name1> [<number2>|<name2>]
+2016-09-01 15:40:10		                 merge <number>
+2016-09-01 15:40:10		                 unmerge [<number>|-all]
+2016-09-01 15:40:10		                 hide [<number>|<name>|-all [<number>|<name>...]]
+2016-09-01 15:40:10		                 unhide [<number>|<name>|-all [<number>|<name>...]]
+2016-09-01 15:40:10		                 renumber [<number1> [<number2> [<start>]]]
+2016-09-01 15:40:10		                 close [<n1>[-<n2>]|<name>]
+2016-09-01 15:40:10		                 notify <level>
+2016-09-01 15:40:10		                 localvar
+2016-09-01 15:40:10		                 set <property> <value>
+2016-09-01 15:40:10		                 get <property>
+2016-09-01 15:40:10		                 <number>|-|+|<name>
+2016-09-01 15:40:10		manage buffers
+2016-09-01 15:40:10		    list: list buffers (without argument, this list is displayed)
+2016-09-01 15:40:10		   clear: clear buffer content (number for a buffer, -merged for merged buffers, -all for all buffers, or nothing for current buffer)
+2016-09-01 15:40:10		    move: move buffer in the list (may be relative, for example -1); "-" = move to first buffer number, "+" = move to last buffer number + 1
+2016-09-01 15:40:10		    swap: swap two buffers (swap with current buffer if only one number/name given)
+2016-09-01 15:40:10		   merge: merge current buffer to another buffer (chat area will be mix of both buffers)
+2016-09-01 15:40:10		          (by default ctrl-x switches between merged buffers)
+2016-09-01 15:40:10		 unmerge: unmerge buffer from other buffers which have same number
+2016-09-01 15:40:10		    hide: hide the buffer
+2016-09-01 15:40:10		  unhide: unhide the buffer
+2016-09-01 15:40:10		renumber: renumber buffers (works only if option weechat.look.buffer_auto_renumber is off)
+2016-09-01 15:40:10		   close: close buffer (number/range or name is optional)
+2016-09-01 15:40:10		  notify: set notify level for current buffer: this level determines whether buffer will be added to hotlist or not:
+2016-09-01 15:40:10		               none: never
+2016-09-01 15:40:10		          highlight: for highlights only
+2016-09-01 15:40:10		            message: for messages from users + highlights
+2016-09-01 15:40:10		                all: all messages
+2016-09-01 15:40:10		              reset: reset to default value (all)
+2016-09-01 15:40:10		localvar: display local variables for current buffer
+2016-09-01 15:40:10		     set: set a property for current buffer
+2016-09-01 15:40:10		     get: display a property of current buffer
+2016-09-01 15:40:10		  number: jump to buffer by number, possible prefix:
+2016-09-01 15:40:10		          '+': relative jump, add number to current
+2016-09-01 15:40:10		          '-': relative jump, sub number to current
+2016-09-01 15:40:10		          '*': jump to number, using option "weechat.look.jump_current_to_previous_buffer"
+2016-09-01 15:40:10		       -: jump to first buffer number
+2016-09-01 15:40:10		       +: jump to last buffer number
+2016-09-01 15:40:10		    name: jump to buffer by (partial) name
+2016-09-01 15:40:10		Examples:
+2016-09-01 15:40:10		  clear current buffer:
+2016-09-01 15:40:10		    /buffer clear
+2016-09-01 15:40:10		  move buffer to number 5:
+2016-09-01 15:40:10		    /buffer move 5
+2016-09-01 15:40:10		  swap buffer 1 with 3:
+2016-09-01 15:40:10		    /buffer swap 1 3
+2016-09-01 15:40:10		  swap buffer #weechat with current buffer:
+2016-09-01 15:40:10		    /buffer swap #weechat
+2016-09-01 15:40:10		  merge with core buffer:
+2016-09-01 15:40:10		    /buffer merge 1
+2016-09-01 15:40:10		  unmerge buffer:
+2016-09-01 15:40:10		    /buffer unmerge
+2016-09-01 15:40:10		  close current buffer:
+2016-09-01 15:40:10		    /buffer close
+2016-09-01 15:40:10		  close buffers 5 to 7:
+2016-09-01 15:40:10		    /buffer close 5-7
+2016-09-01 15:40:10		  jump to #weechat:
+2016-09-01 15:40:10		    /buffer #weechat
+2016-09-01 15:40:10		  jump to next buffer:
+2016-09-01 15:40:10		    /buffer +1
+2016-09-01 15:40:10		  jump to last buffer number:
+2016-09-01 15:40:10		    /buffer +
+2016-09-01 15:41:03		Notify changed for "irc.znc.##security": "none" to "message"
+2016-09-01 15:41:46		Notify changed for "irc.znc.##devops": "none" to "message"
+2016-09-01 15:42:01		Notify changed for "irc.znc.#chef": "none" to "message"
+2016-09-01 16:13:06		No connected client for relay
+2016-09-01 16:14:22		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-01 16:14:22		relay: relay "irc.znc" (port 9001) added
+2016-09-01 16:14:32		relay: new client on port 9001: 1/irc.znc/127.0.0.1
+2016-09-01 16:15:35		relay: new client on port 9001: 2/irc.znc/127.0.0.1
+2016-09-01 16:15:54		Connected clients for relay:
+2016-09-01 16:15:54		  2/irc.znc/127.0.0.1 (connected), started on: Thu, 01 Sep 2016 16:15:35
+2016-09-01 16:15:54		  1/irc.znc/127.0.0.1 (connected), started on: Thu, 01 Sep 2016 16:14:32
+2016-09-01 16:16:05	=!=	Error with command "/relay help" (help on command: /help relay)
+2016-09-01 16:16:10		[relay]  /relay  list|listfull|listrelay
+2016-09-01 16:16:10		                 add <name> <port>
+2016-09-01 16:16:10		                 del|stop|restart <name>
+2016-09-01 16:16:10		                 raw
+2016-09-01 16:16:10		                 sslcertkey
+2016-09-01 16:16:10		relay control
+2016-09-01 16:16:10		         list: list relay clients (only active relays)
+2016-09-01 16:16:10		     listfull: list relay clients (verbose, all relays)
+2016-09-01 16:16:10		    listrelay: list relays (name and port)
+2016-09-01 16:16:10		          add: add a relay (listen on a port)
+2016-09-01 16:16:10		          del: remove a relay (clients remain connected)
+2016-09-01 16:16:10		         stop: close the server socket (clients remain connected)
+2016-09-01 16:16:10		      restart: close the server socket and listen again on port (clients remain connected)
+2016-09-01 16:16:10		         name: relay name (see format below)
+2016-09-01 16:16:10		         port: port used for relay
+2016-09-01 16:16:10		          raw: open buffer with raw Relay data
+2016-09-01 16:16:10		   sslcertkey: set SSL certificate/key using path in option relay.network.ssl_cert_key
+2016-09-01 16:16:10		Relay name is: [ipv4.][ipv6.][ssl.]<protocol.name>
+2016-09-01 16:16:10		         ipv4: force use of IPv4
+2016-09-01 16:16:10		         ipv6: force use of IPv6
+2016-09-01 16:16:10		          ssl: enable SSL
+2016-09-01 16:16:10		protocol.name: protocol and name to relay:
+2016-09-01 16:16:10		                 - protocol "irc": name is the server to share (optional, if not given, the server name must be sent by client in command "PASS", with format: "PASS server:password")
+2016-09-01 16:16:10		                 - protocol "weechat" (name is not used)
+2016-09-01 16:16:10		The "irc" protocol allows any IRC client (including WeeChat itself) to connect on the port.
+2016-09-01 16:16:10		The "weechat" protocol allows a remote interface to connect on the port, see the list here: https://weechat.org/download/
+2016-09-01 16:16:10		Without argument, this command opens buffer with list of relay clients.
+2016-09-01 16:16:10		Examples:
+2016-09-01 16:16:10		  irc proxy, for server "freenode":
+2016-09-01 16:16:10		    /relay add irc.freenode 8000
+2016-09-01 16:16:10		  irc proxy, for server "freenode", with SSL:
+2016-09-01 16:16:10		    /relay add ssl.irc.freenode 8001
+2016-09-01 16:16:10		  irc proxy, for all servers (client will choose), with SSL:
+2016-09-01 16:16:10		    /relay add ssl.irc 8002
+2016-09-01 16:16:10		  weechat protocol:
+2016-09-01 16:16:10		    /relay add weechat 9000
+2016-09-01 16:16:10		  weechat protocol with SSL:
+2016-09-01 16:16:10		    /relay add ssl.weechat 9001
+2016-09-01 16:16:10		  weechat protocol with SSL, using only IPv4:
+2016-09-01 16:16:10		    /relay add ipv4.ssl.weechat 9001
+2016-09-01 16:16:10		  weechat protocol with SSL, using only IPv6:
+2016-09-01 16:16:10		    /relay add ipv6.ssl.weechat 9001
+2016-09-01 16:16:10		  weechat protocol with SSL, using IPv4 + IPv6:
+2016-09-01 16:16:10		    /relay add ipv4.ipv6.ssl.weechat 9001
+2016-09-01 16:16:57	=!=	relay: reading data on socket for client 2/irc.znc/127.0.0.1: error 0 (connection closed by peer)
+2016-09-01 16:16:57		relay: disconnected from client 2/irc.znc/127.0.0.1
+2016-09-01 16:16:57	=!=	relay: reading data on socket for client 1/irc.znc/127.0.0.1: error 0 (connection closed by peer)
+2016-09-01 16:16:57		relay: disconnected from client 1/irc.znc/127.0.0.1
+2016-09-01 16:17:08		relay: new client on port 9001: 1/irc.znc/127.0.0.1
+2016-09-01 16:17:28	=!=	relay: reading data on socket for client 1/irc.znc/127.0.0.1: error 0 (connection closed by peer)
+2016-09-01 16:17:28		relay: disconnected from client 1/irc.znc/127.0.0.1
+2016-09-01 16:18:03	=!=	Too few arguments for command "/relay stop" (help on command: /help relay)
+2016-09-01 16:18:15		No connected client for relay
+2016-09-01 16:18:21		Listening on ports:
+2016-09-01 16:18:21		  port 9001, relay: irc.znc, IPv4+6, started on: Thu, 01 Sep 2016 16:14:22
+2016-09-02 01:25:08		relay: socket closed for irc.znc (port 9001)
+2016-09-02 14:13:21		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-02 14:13:21		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-02 14:37:29	=!=	Error: option "trigger.trigger.beep" not found
+2016-09-02 15:14:00		[core]  /print  [-buffer <number>|<name>] [-core] [-escape] [-date <date>] [-tags <tags>] [-action|-error|-join|-network|-quit] [<text>]
+2016-09-02 15:14:00		                -stdout|-stderr [<text>]
+2016-09-02 15:14:00		                -beep
+2016-09-02 15:14:00		display text on a buffer
+2016-09-02 15:14:00		 -buffer: display text in this buffer (default: buffer where command is executed)
+2016-09-02 15:14:00		   -core: alias of "-buffer core.weechat"
+2016-09-02 15:14:00		-current: display text on current buffer
+2016-09-02 15:14:00		 -escape: interpret escaped chars (for example \a, \07, \x07)
+2016-09-02 15:14:00		   -date: message date, format can be:
+2016-09-02 15:14:00		            -n: 'n' seconds before now
+2016-09-02 15:14:00		            +n: 'n' seconds in the future
+2016-09-02 15:14:00		             n: 'n' seconds since the Epoch (see man time)
+2016-09-02 15:14:00		            date/time (ISO 8601): yyyy-mm-ddThh:mm:ss, example: 2014-01-19T04:32:55
+2016-09-02 15:14:00		            time: hh:mm:ss (example: 04:32:55)
+2016-09-02 15:14:00		   -tags: comma-separated list of tags (see /help filter for a list of tags most commonly used)
+2016-09-02 15:14:00		    text: text to display (prefix and message must be separated by "\t", if text starts with "-", then add a "\" before)
+2016-09-02 15:14:00		 -stdout: display text on stdout (escaped chars are interpreted)
+2016-09-02 15:14:00		 -stderr: display text on stderr (escaped chars are interpreted)
+2016-09-02 15:14:00		   -beep: alias of "-stderr \a"
+2016-09-02 15:14:00		The options -action ... -quit use the prefix defined in options "weechat.look.prefix_*".
+2016-09-02 15:14:00		Following escaped chars are supported:
+2016-09-02 15:14:00		  \" \\ \a \b \e \f \n \r \t \v \0ooo \xhh \uhhhh \Uhhhhhhhh
+2016-09-02 15:14:00		Examples:
+2016-09-02 15:14:00		  display a reminder on core buffer with a highlight:
+2016-09-02 15:14:00		    /print -core -tags notify_highlight Reminder: buy milk
+2016-09-02 15:14:00		  display an error on core buffer:
+2016-09-02 15:14:00		    /print -core -error Some error here
+2016-09-02 15:14:00		  display message on core buffer with prefix "abc":
+2016-09-02 15:14:00		    /print -core abc\tThe message
+2016-09-02 15:14:00		  display a message on channel #weechat:
+2016-09-02 15:14:00		    /print -buffer irc.freenode.#weechat Message on #weechat
+2016-09-02 15:14:00		  display a snowman (U+2603):
+2016-09-02 15:14:00		    /print -escape \u2603
+2016-09-02 15:14:00		  send alert (BEL):
+2016-09-02 15:14:00		    /print -beep
+2016-09-02 15:55:26		TERM=xterm-256color
+2016-09-02 15:55:30		Upgrading WeeChat with binary file: "weechat"...
+2016-09-02 15:55:30		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-02 15:55:30		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-02 15:55:30		Upgrade done (0.52s)
+2016-09-02 18:49:03	=!=	irc: command "msg" must be executed on irc buffer (server or channel)
+2016-09-02 18:49:09	=!=	Error: unknown command "/nickserv" (type /help for help)
+2016-09-02 19:11:15	=!=	irc: command "whois" must be executed on irc buffer (server or channel)
+2016-09-03 02:58:52		relay: socket closed for irc.znc (port 9001)
+2016-09-03 12:26:25		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-03 12:26:25		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-04 01:53:35		relay: socket closed for irc.znc (port 9001)
+2016-09-04 12:32:20		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-04 12:32:20		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-04 21:17:54		relay: socket closed for irc.znc (port 9001)
+2016-09-05 21:58:39		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-05 21:58:39		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-05 22:26:47		relay: socket closed for irc.znc (port 9001)
+2016-09-06 11:21:08		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-06 11:21:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-06 13:19:19		script: downloading list of scripts...
+2016-09-06 13:19:20		script: 310 scripts for WeeChat 1.4
+2016-09-06 13:19:21		perl: loading script "/home/kod/.weechat/perl/buffers.pl"
+2016-09-06 13:19:21		perl: registered script "buffers", version 5.4 (Sidebar with list of buffers)
+2016-09-06 13:19:21		New key binding (context "mouse"): @bar(buffers):ctrl-wheeldown => hsignal:buffers_mouse
+2016-09-06 13:19:21		New key binding (context "mouse"): @bar(buffers):ctrl-wheelup => hsignal:buffers_mouse
+2016-09-06 13:19:21		New key binding (context "mouse"): @item(buffers):button2* => hsignal:buffers_mouse
+2016-09-06 13:19:21		New key binding (context "mouse"): @item(buffers):button1* => hsignal:buffers_mouse
+2016-09-06 13:19:21		python: loading script "/home/kod/.weechat/python/buffer_autoclose.py"
+2016-09-06 13:19:21		python: registered script "buffer_autoclose", version 0.4 (Automatically close inactive private message buffers)
+2016-09-06 13:19:22		perl: loading script "/home/kod/.weechat/perl/iset.pl"
+2016-09-06 13:19:22		perl: registered script "iset", version 4.2 (Interactive Set for configuration options)
+2016-09-06 13:19:22		New key binding (context "mouse"): @chat(perl.iset):button1 => hsignal:iset_mouse
+2016-09-06 13:19:22		New key binding (context "mouse"): @chat(perl.iset):button2* => hsignal:iset_mouse
+2016-09-06 13:19:22		New key binding (context "mouse"): @chat(perl.iset):wheeldown => /repeat 5 /iset **down
+2016-09-06 13:19:22		New key binding (context "mouse"): @chat(perl.iset):wheelup => /repeat 5 /iset **up
+2016-09-06 13:19:23		python: loading script "/home/kod/.weechat/python/go.py"
+2016-09-06 13:19:23		python: registered script "go", version 2.1 (Quick jump to buffers)
+2016-09-06 13:19:24		python: loading script "/home/kod/.weechat/python/colorize_nicks.py"
+2016-09-06 13:19:24		python: registered script "colorize_nicks", version 22 (Use the weechat nick colors in the chat area)
+2016-09-06 13:19:39		Option changed: weechat.bar.status.color_bg = 0  (default: blue)
+2016-09-06 13:19:47		Option changed: weechat.bar.title.color_bg = 0  (default: blue)
+2016-09-06 13:19:55		Option changed: weechat.color.chat_nick_colors = "1,2,3,4,5,6"  (default: "cyan,magenta,green,brown,lightblue,default,lightcyan,lightmagenta,lightgreen,blue")
+2016-09-06 13:20:00		Option changed: buffers.color.hotlist_message_fg = 7  (default: yellow)
+2016-09-06 13:20:05		Option changed: weechat.bar.buffers.position = top  (default: left)
+2016-09-06 13:55:53		relay: socket closed for irc.znc (port 9001)
+2016-09-06 13:56:54		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-06 13:56:54		perl scripts loaded: buffers, iset
+2016-09-06 13:56:54		python scripts loaded: buffer_autoclose, colorize_nicks, go
+2016-09-06 13:56:54		script: 310 scripts for WeeChat 1.4
+2016-09-06 13:56:54		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-06 13:57:06		relay: socket closed for irc.znc (port 9001)
+2016-09-06 14:03:23		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-06 14:03:23		perl scripts loaded: buffers, iset
+2016-09-06 14:03:23		python scripts loaded: buffer_autoclose, colorize_nicks, go
+2016-09-06 14:03:23		script: 310 scripts for WeeChat 1.4
+2016-09-06 14:03:23		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-06 15:16:23		buffer_autoclose: Closing buffer: znc.elventails
+2016-09-06 20:32:50		fifo: removing old fifo pipe "/home/kod/.weechat/weechat_fifo_14095"
+2016-09-06 20:32:50	=!=	relay: cannot "bind" on port 9001 (irc.znc): error 98 Address already in use
+2016-09-06 20:32:50		perl scripts loaded: buffers, iset
+2016-09-06 20:32:50		python scripts loaded: buffer_autoclose, colorize_nicks, go
+2016-09-06 20:32:50		script: 310 scripts for WeeChat 1.4
+2016-09-06 20:32:50		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-06 20:42:22	=!=	relay: cannot "bind" on port 9001 (irc.znc): error 98 Address already in use
+2016-09-06 20:42:22		perl scripts loaded: buffers, iset
+2016-09-06 20:42:22		python scripts loaded: buffer_autoclose, colorize_nicks, go
+2016-09-06 20:42:22		script: 310 scripts for WeeChat 1.4
+2016-09-06 20:42:22		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-06 20:43:26	=!=	relay: cannot "bind" on port 9001 (irc.znc): error 98 Address already in use
+2016-09-06 20:43:26		perl scripts loaded: buffers, iset
+2016-09-06 20:43:26		python scripts loaded: buffer_autoclose, colorize_nicks, go
+2016-09-06 20:43:26		script: 310 scripts for WeeChat 1.4
+2016-09-06 20:43:26		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-07 02:15:21	=!=	relay: cannot "bind" on port 9001 (irc.znc): error 98 Address already in use
+2016-09-07 02:15:21		perl scripts loaded: buffers, iset
+2016-09-07 02:15:21		python scripts loaded: buffer_autoclose, colorize_nicks, go
+2016-09-07 02:15:21		script: 310 scripts for WeeChat 1.4
+2016-09-07 02:15:21		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-07 02:15:30		Mouse enabled
+2016-09-07 02:24:06	=!=	Error with command "/mouse diable" (help on command: /help mouse)
+2016-09-07 02:24:14		Mouse disabled
+2016-09-07 02:31:46		Mouse enabled
+2016-09-07 09:43:19		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-07 09:43:19		perl scripts loaded: buffers, iset
+2016-09-07 09:43:19		python scripts loaded: buffer_autoclose, colorize_nicks, go
+2016-09-07 09:43:19		script: 310 scripts for WeeChat 1.4
+2016-09-07 09:43:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-07 10:34:43		relay: socket closed for irc.znc (port 9001)
+2016-09-07 17:22:10		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-07 17:22:10		perl scripts loaded: buffers, iset
+2016-09-07 17:22:10		python scripts loaded: buffer_autoclose, colorize_nicks, go
+2016-09-07 17:22:10		script: downloading list of scripts...
+2016-09-07 17:22:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-07 17:22:11		script: 310 scripts for WeeChat 1.4
+2016-09-07 17:32:38		Mouse disabled
+2016-09-08 01:33:55		relay: socket closed for irc.znc (port 9001)
+2016-09-08 10:38:48		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-08 10:38:48		perl scripts loaded: buffers, iset
+2016-09-08 10:38:48		python scripts loaded: buffer_autoclose, colorize_nicks, go
+2016-09-08 10:38:48		script: 310 scripts for WeeChat 1.4
+2016-09-08 10:38:48		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-08 13:06:41		python: loading script "/home/kod/.weechat/python/lnotify.py"
+2016-09-08 13:06:41		python: registered script "lnotify", version 0.3.1 (lnotify - A libnotify script for weechat)
+2016-09-08 13:07:04	=!=	Option "weechat.lnotify.*" not found (tip: you can use wildcard "*" in option to see a sublist)
+2016-09-08 13:38:48		buffer_autoclose: Closing buffer: znc.elventails
+2016-09-08 15:36:45		relay: socket closed for irc.znc (port 9001)
+2016-09-08 16:12:35		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-08 16:12:35		perl scripts loaded: buffers, iset
+2016-09-08 16:12:36		python scripts loaded: buffer_autoclose, colorize_nicks, go, lnotify
+2016-09-08 16:12:36		script: 310 scripts for WeeChat 1.4
+2016-09-08 16:12:36		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-08 23:44:06		relay: socket closed for irc.znc (port 9001)
+2016-09-09 09:48:10		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-09 09:48:10		perl scripts loaded: buffers, iset
+2016-09-09 09:48:10		python scripts loaded: buffer_autoclose, colorize_nicks, go, lnotify
+2016-09-09 09:48:10		script: downloading list of scripts...
+2016-09-09 09:48:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-09 09:48:11		script: 310 scripts for WeeChat 1.4
+2016-09-09 11:23:20		relay: socket closed for irc.znc (port 9001)
+2016-09-09 16:47:11		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-09 16:47:11		perl scripts loaded: buffers, iset
+2016-09-09 16:47:11		python scripts loaded: buffer_autoclose, colorize_nicks, go, lnotify
+2016-09-09 16:47:11		script: 310 scripts for WeeChat 1.4
+2016-09-09 16:47:11		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2016-09-09 16:48:25		relay: socket closed for irc.znc (port 9001)
+2016-09-09 16:48:29		relay: listening on port 9001 (relay: irc.znc, IPv4+6, max 5 clients)
+2016-09-09 16:48:29		perl scripts loaded: buffers, iset
+2016-09-09 16:48:29		python scripts loaded: buffer_autoclose, colorize_nicks, go, lnotify
+2016-09-09 16:48:29		script: 310 scripts for WeeChat 1.4
+2016-09-09 16:48:29		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
