@@ -14,14 +14,23 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Bundle 'chriskempson/base16-vim'
 Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'klen/python-mode'
+Plugin 'elzr/vim-json'
+Plugin 'hashivim/vim-terraform'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype indent on
 filetype plugin indent on    " required
 colorscheme jellybeans
+let python_highlight_all=1
+let g:ycm_python_binary_path = 'python'
+let g:terraform_align=1
 syntax on
 set number
 set ruler
@@ -33,3 +42,8 @@ set autoindent
 set expandtab
 set fileformat=unix
 set laststatus=2
+set nofoldenable
+
+function! FormatJSON()
+    :%!python -m json.tool
+endfunction
