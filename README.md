@@ -4,3 +4,4 @@
 - [ ] ssh
 - [ ] aws
 - [ ] zsh
+- [x] tmux
