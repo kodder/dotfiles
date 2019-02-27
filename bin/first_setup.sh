@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # apt first installations
-sudo apt update
-sudo apt install vim git ansible zsh curl htop tmux 
+sudo apt update -y
+sudo apt install -y vim git ansible zsh curl htop python-setuptools python-pip
 
 # get google chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
