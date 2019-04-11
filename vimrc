@@ -21,10 +21,11 @@ Plugin 'scrooloose/syntastic'
 Plugin 'klen/python-mode'
 Plugin 'elzr/vim-json'
 Plugin 'hashivim/vim-terraform'
-
-
+Plugin 'fatih/vim-go'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
+
 filetype indent on
 filetype plugin indent on    " required
 colorscheme jellybeans
@@ -43,7 +44,7 @@ set expandtab
 set fileformat=unix
 set laststatus=2
 set nofoldenable
-
+set cursorline
 function! FormatJSON()
     :%!python -m json.tool
 endfunction
