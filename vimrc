@@ -17,20 +17,22 @@ Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'chriskempson/base16-vim'
 Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/syntastic'
+Plugin 'vim-syntastic/syntastic'
 Plugin 'klen/python-mode'
 Plugin 'elzr/vim-json'
 Plugin 'hashivim/vim-terraform'
 Plugin 'fatih/vim-go'
+Plugin 'chase/vim-ansible-yaml'
+Plugin 'ycm-core/YouCompleteMe'
+Plugin 'ekalinin/Dockerfile.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
 
 filetype indent on
 filetype plugin indent on    " required
-colorscheme jellybeans
+colorscheme dracula 
 let python_highlight_all=1
-let g:ycm_python_binary_path = 'python'
 let g:terraform_align=1
 syntax on
 set number
@@ -45,6 +47,6 @@ set fileformat=unix
 set laststatus=2
 set nofoldenable
 set cursorline
-function! FormatJSON()
-    :%!python -m json.tool
-endfunction
+
+set omnifunc=syntaxcomplete#Complete
+
