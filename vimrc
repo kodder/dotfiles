@@ -52,5 +52,5 @@ set cursorline
 set omnifunc=syntaxcomplete#Complete
 
 " Remaps
-nnoremap <Leader>p :NERDTreeToggle<Enter>
-nnoremap <Leader>g :GitGutterToggle<Enter>
+nnoremap <silent><Leader>p :NERDTreeToggle<Enter>
+nnoremap <silent><Leader>g :GitGutterToggle<Enter>
