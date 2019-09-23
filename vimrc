@@ -28,11 +28,13 @@ Plugin 'ekalinin/Dockerfile.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
-
 filetype indent on
 filetype plugin indent on    " required
-colorscheme dracula 
+colorscheme gruvbox
+set background=dark
 let python_highlight_all=1
+let g:pymode_python = 'python3'
+let g:pymode_options_colorcolumn = 0
 let g:terraform_align=1
 syntax on
 set number
@@ -46,7 +48,9 @@ set expandtab
 set fileformat=unix
 set laststatus=2
 set nofoldenable
-set cursorline
-
+set cursorline 
 set omnifunc=syntaxcomplete#Complete
 
+" Remaps
+nnoremap <Leader>p :NERDTreeToggle<Enter>
+nnoremap <Leader>g :GitGutterToggle<Enter>
