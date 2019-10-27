@@ -3,5 +3,5 @@
 - [x] vim
 - [ ] ssh
 - [ ] aws
-- [ ] zsh
+- [x] zsh
 - [x] tmux
