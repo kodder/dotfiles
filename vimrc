@@ -37,6 +37,7 @@ let g:pymode_python = 'python3'
 let g:pymode_options_colorcolumn = 0
 let g:terraform_align=1
 syntax on
+set autoread
 set number
 set ruler
 set tabstop=4
@@ -54,3 +55,11 @@ set omnifunc=syntaxcomplete#Complete
 " Remaps
 nnoremap <silent><Leader>p :NERDTreeToggle<Enter>
 nnoremap <silent><Leader>g :GitGutterToggle<Enter>
+map <F7> gg=G<C-o><C-o>
+
+" ctrlp on rg
+if executable('rg')
+    set grepprg=rg\ --color=never
+    let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+    let g:ctrlp_use_caching = 0
+endif
