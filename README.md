@@ -5,3 +5,6 @@
 - [ ] aws
 - [x] zsh
 - [x] tmux
+
+
+![preview]
