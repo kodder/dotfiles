@@ -1,5 +1,5 @@
 # dotfiles
-![preview](testing.png)
+![test](testing.png)
 
 - [x] vim
 - [ ] ssh
