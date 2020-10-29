@@ -1,4 +1,5 @@
 # dotfiles
+![preview](testing.png)
 
 - [x] vim
 - [ ] ssh
@@ -6,5 +7,3 @@
 - [x] zsh
 - [x] tmux
 
-
-![preview]
