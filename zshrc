@@ -144,3 +144,5 @@ function dotsync {
     popd
 }
 eval "$(direnv hook zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
