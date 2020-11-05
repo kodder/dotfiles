@@ -38,7 +38,7 @@ let g:pymode_options_colorcolumn = 0
 let g:terraform_align=1
 syntax on
 set autoread
-set number
+set nu rnu
 set ruler
 set tabstop=4
 set softtabstop=4
@@ -63,3 +63,4 @@ if executable('rg')
     let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
     let g:ctrlp_use_caching = 0
 endif
+

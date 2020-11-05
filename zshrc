@@ -62,10 +62,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  aws
-)
+plugins=(git aws)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,3 +94,50 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+# List of Aliases
+alias tat="cd ~/code/tatango"
+
+# Go Stuff
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH=$(go env GOPATH)
+
+#Get ips of instances by name
+# Tatango AWS Functions!
+function awip {
+    aws ec2 describe-instances --filters "Name=tag:Name,Values=$1"  --query 'Reservations[].Instances[].PrivateIpAddress' --output json | jq -r '.[]'
+}     
+
+function awid {
+    aws ec2 describe-instances --filters "Name=tag:Name,Values=$1"  --query 'Reservations[].Instances[].InstanceId' --output json | jq -r '.[]'
+}
+function awssh {
+    ssh `awip $1 | head -n 1`
+}      
+function awami {
+    aws ec2 create-image --instance-id `awid $1 | head -n 1` --name "$2" --description "$3"
+}
+function awrefresh {
+    awip $1 | while read -r line; do
+        ssh -n $line "sudo reboot"
+        sleep 3m
+    done
+}
+function awcount {
+    aws ec2 describe-instances --filters "Name=tag:Name,Values=$1" "Name=instance-state-name,Values=running"  --query 'Reservations[].Instances[].[InstanceId]' --output text | wc -l
+}
+function awasg {
+    aws autoscaling describe-auto-scaling-instances --query 'AutoScalingInstances[].AutoScalingGroupName' --instance-ids `awid $1 | head -n 1` --output json | jq -r '.[]'
+}
+function dotsync {
+    rsync ~/.config/nvim/init.vim ~/code/mine/dotfiles/init.vim
+    rsync ~/.vimrc ~/code/mine/dotfiles/vimrc
+    rsync ~/.tmux.conf ~/code/mine/dotfiles/tmux.conf
+    rsync ~/.zshrc ~/code/mine/dotfiles/zshrc
+    echo "Synced Dotfiles"
+    pushd ~/code/mine/dotfiles
+    git commit -am "Synced dotfiles"
+    git push
+    popd
+}
+eval "$(direnv hook zsh)"
