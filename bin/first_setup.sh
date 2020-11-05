@@ -10,9 +10,10 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
 
 # get slack.
-
+sudo snap install slack
 
 # configure vim
+sudo apt install vim neovim
 
 
 # get oh-my-zsh/powerline fonts and configure it 
