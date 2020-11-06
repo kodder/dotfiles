@@ -41,6 +41,7 @@ set encoding=utf-8
 
 " vim-go stuff
 let g:go_def_mapping_enabled = 0
+let g:go_code_completion_enabled = 0
 let g:go_highlight_structs = 1 
 let g:go_highlight_methods = 1
 let g:go_highlight_functions = 1
