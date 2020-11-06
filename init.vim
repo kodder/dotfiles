@@ -11,6 +11,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'sainnhe/gruvbox-material'
 Plug 'sainnhe/sonokai'
+Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
 call plug#end()
 
 " colorscheme gruvbox
