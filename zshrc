@@ -97,6 +97,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # List of Aliases
 alias tat="cd ~/code/tatango"
+alias n="nvim"
 
 # Go Stuff
 export PATH=$PATH:$(go env GOPATH)/bin
@@ -137,6 +138,7 @@ function dotsync {
     rsync ~/.vimrc ~/code/mine/dotfiles/vimrc
     rsync ~/.tmux.conf ~/code/mine/dotfiles/tmux.conf
     rsync ~/.zshrc ~/code/mine/dotfiles/zshrc
+    rsync ~/.gitconfig ~/code/mine/dotfiles/gitconfig
     echo "Synced Dotfiles"
     pushd ~/code/mine/dotfiles
     git commit -am "Synced dotfiles"

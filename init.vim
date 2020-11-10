@@ -13,6 +13,7 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'sainnhe/sonokai'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
+Plug 'ekalinin/Dockerfile.vim'
 call plug#end()
 
 set background=dark
