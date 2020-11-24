@@ -19,6 +19,15 @@ set background=dark
 set autoread
 set nu rnu
 set ruler
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set textwidth=79
+set autoindent
+set expandtab
+set nofoldenable
+set cursorline
+
 
 " Important!!
 if has('termguicolors')

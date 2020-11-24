@@ -133,6 +133,9 @@ function awasg {
 function awsearch {
     aws ec2 describe-instances --filters "Name=tag:Name,Values=*$1*" --output table
 }
+function awlist {
+    aws ec2 describe-instances --query 'Reservations[].Instances[].[InstanceId,PrivateIpAddress,Tags[?Key==`Name`]| [0].Value]' --output table
+}
 function dotsync {
     rsync ~/.config/nvim/init.vim ~/code/mine/dotfiles/init.vim
     rsync ~/.vimrc ~/code/mine/dotfiles/vimrc
