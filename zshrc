@@ -131,10 +131,10 @@ function awasg {
     aws autoscaling describe-auto-scaling-instances --query 'AutoScalingInstances[].AutoScalingGroupName' --instance-ids `awid $1 | head -n 1` --output json | jq -r '.[]'
 }
 function awsearch {
-    aws ec2 describe-instances --filters "Name=tag:Name,Values=*$1*" --output table
+    aws ec2 describe-instances --filters "Name=tag:Name,Values=*$1*" --query 'Reservations[].Instances[].[InstanceId,PrivateIpAddress,Tags[?Key==`Name`]| [0].Value]' --output table
 }
 function awlist {
-    aws ec2 describe-instances --query 'Reservations[].Instances[].[InstanceId,PrivateIpAddress,Tags[?Key==`Name`]| [0].Value]' --output table
+    aws ec2 describe-instances --filters "Name=instance-state-name,Values=running" --query 'Reservations[].Instances[].[InstanceId,PrivateIpAddress,Tags[?Key==`Name`]| [0].Value]' --output table
 }
 function dotsync {
     rsync ~/.config/nvim/init.vim ~/code/mine/dotfiles/init.vim
