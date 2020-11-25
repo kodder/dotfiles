@@ -17,6 +17,7 @@ call plug#end()
 
 set background=dark
 set autoread
+set autowrite
 set nu rnu
 set ruler
 set tabstop=4
