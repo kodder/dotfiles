@@ -1,6 +1,5 @@
 # dotfiles
 
-- [x] vim
 - [x] gitconfig
 - [x] zsh
 - [x] tmux
