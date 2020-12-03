@@ -103,6 +103,8 @@ alias n="nvim"
 export PATH=$PATH:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
 
+# Export LD Lib dir
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 #Get ips of instances by name
 # Tatango AWS Functions!
 function awip {
@@ -151,3 +153,10 @@ function dotsync {
 eval "$(direnv hook zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/wissam/google-cloud-sdk/path.zsh.inc' ]; then . '/home/wissam/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/wissam/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/wissam/google-cloud-sdk/completion.zsh.inc'; fi
