@@ -100,9 +100,9 @@ alias tat="cd ~/code/tatango"
 alias n="nvim"
 
 # Go Stuff
+export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
 export GOPATH=$(go env GOPATH)
-
 # Export LD Lib dir
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 #Get ips of instances by name

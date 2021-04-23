@@ -29,6 +29,7 @@ set autoindent
 set expandtab
 set nofoldenable
 set cursorline
+set hlsearch
 
 
 " Important!!
